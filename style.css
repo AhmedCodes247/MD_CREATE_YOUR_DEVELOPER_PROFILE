@@ -67,7 +67,7 @@ input:focus {
 }
 #passwordInput {
   position: relative;
-  left: 20px;
+  left: 28px;
 }
 button {
   padding: 10px 20px;
@@ -119,6 +119,7 @@ button:hover {
   .form-title {
     position: relative;
     top: 110px;
+    left: 0px;
     font-size: 20px;
     width: 60%;
     font-weight: 900;
@@ -128,8 +129,9 @@ button:hover {
   form {
     position: relative;
     top: 110px;
+    left: 0px;
     width: 240px;
-    height: 80%;
+    height: 60%;
   }
   label {
     font-size: 12px;
@@ -175,14 +177,14 @@ button:hover {
   }
   button {
     position: relative;
-    top: -55px;
-    left: ;
+    top: -70px;
+    left: 0px;
     font-size: 12px;
     width: 100px;
     height: 40px;
   }
   #result {
     font-size: 14px;
-    margin: -20px 0px;
+    margin: -30px 0px;
   }
 }
