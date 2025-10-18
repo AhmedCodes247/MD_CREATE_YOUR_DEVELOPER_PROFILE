@@ -1,0 +1,188 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url(Fonts_Folder/OpenSans-VariableFont_wdth\wght.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient(135deg, #020024, #090979, #00d4ff);
+  font-family: "Open Sans";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.form-title {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+form {
+  box-shadow: 0 0 40px rgba(0, 153, 255, 0.3);
+  backdrop-filter: blur(10px);
+  text-transform: capitalize;
+  width: 35%;
+  height: 42%;
+  padding: 50px 20px;
+  background-color: #000095;
+  border-radius: 10px;
+  color: white;
+}
+label {
+  font-weight: bolder;
+  padding: 20px 10px;
+}
+
+input {
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: #000095;
+  border: 2px solid white;
+  color: white;
+  padding: 0px 15px;
+  width: 220px;
+  height: 35px;
+  font-size: 14px;
+}
+input:focus {
+  outline: none;
+  border-color: #00e0ff;
+  box-shadow: 0 0 8px #00e0ff;
+  transition: 0.3s;
+}
+
+#nameInput {
+  position: relative;
+  left: 80px;
+}
+#emailInput {
+  position: relative;
+  left: 50px;
+}
+#passwordInput {
+  position: relative;
+  left: 20px;
+}
+button {
+  padding: 10px 20px;
+  font-size: 1.05rem;
+  text-transform: capitalize;
+  background-color: #000095;
+  border: 2px solid white;
+  color: white;
+  position: relative;
+  top: -110px;
+  border-radius: 10px;
+  font-weight: bolder;
+}
+button:hover {
+  cursor: pointer;
+  background: linear-gradient(90deg, #007bff, #00e0ff);
+  color: white;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+#result {
+  position: relative;
+  top: 100px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 16px;
+}
+/* .success {
+  background: #00ff8840;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: #00ff99;
+  font-weight: 500;
+  margin-top: 15px;
+  text-align: center;
+  animation: fadeIn 0.5s ease;
+}
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+} */
+@media (max-width: 360px) {
+  body {
+    overflow-y: hidden;
+    margin: -80px;
+    background: linear-gradient(1deg, #4794a4, #dbd9d9, #4794a4);
+  }
+  .form-title {
+    position: relative;
+    top: 110px;
+    font-size: 20px;
+    width: 60%;
+    font-weight: 900;
+    /* font-family: sans-serif; */
+    color: black;
+  }
+  form {
+    position: relative;
+    top: 110px;
+    width: 240px;
+    height: 80%;
+  }
+  label {
+    font-size: 12px;
+    position: relative;
+    left: -10px;
+    top: -50px;
+  }
+  input {
+    width: 160px;
+    height: 20px;
+    font-size: 12px;
+    border-radius: 6px;
+  }
+  #nameInput {
+    position: relative;
+    left: 20px;
+    top: -45px;
+  }
+  #nameLabel {
+    position: relative;
+    top: -30px;
+    left: 12px;
+  }
+  #emailInput {
+    position: relative;
+    top: -35px;
+    left: 20px;
+  }
+  #emailLabel {
+    position: relative;
+    top: -20px;
+    left: 12px;
+  }
+  #passwordInput {
+    position: relative;
+    top: -25px;
+    left: 20px;
+  }
+  #passwordLabel {
+    position: relative;
+    top: -10px;
+    left: 12px;
+  }
+  button {
+    position: relative;
+    top: -55px;
+    left: ;
+    font-size: 12px;
+    width: 100px;
+    height: 40px;
+  }
+  #result {
+    font-size: 14px;
+    margin: -20px 0px;
+  }
+}
